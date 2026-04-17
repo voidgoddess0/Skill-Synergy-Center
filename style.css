@@ -1,0 +1,92 @@
+/* style.css */
+body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #0d0d0d, #1a1a1a);
+    /* Deep dark background */
+    font-family: 'Segoe UI', sans-serif;
+    color: #fff;
+}
+
+.glass-container {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(12px);
+    border-radius: 12px;
+    padding: 40px;
+    width: 350px;
+    text-align: center;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.5);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+h2 {
+    margin-bottom: 20px;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+.form-box {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    text-align: left;
+}
+
+label {
+    font-size: 0.85em;
+    color: #aaa;
+    margin-bottom: -10px;
+}
+
+input,
+select {
+    padding: 12px;
+    border: 1px solid #333;
+    border-radius: 6px;
+    background: #222;
+    color: #fff;
+    font-size: 0.9em;
+}
+
+input:focus,
+select:focus {
+    outline: none;
+    border-color: #00acee;
+    /* Blue accent from Bazaar Meta */
+}
+
+button {
+    padding: 12px;
+    border: none;
+    border-radius: 6px;
+    background: #00acee;
+    color: #000;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.2s;
+    text-transform: uppercase;
+}
+
+button:hover {
+    background: #00d4ff;
+    transform: translateY(-2px);
+}
+
+.error {
+    color: #ff6b6b;
+    font-size: 0.85em;
+    margin-bottom: 15px;
+}
+
+a {
+    color: #00acee;
+    text-decoration: none;
+    font-size: 0.85em;
+}
+
+a:hover {
+    text-decoration: underline;
+}
